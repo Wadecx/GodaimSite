@@ -1,0 +1,190 @@
+/* ================= Google Font ============== */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+@font-face {
+  font-family: UniSansBold;
+  src: url(https://cdn.glitch.com/0cc800e9-bbdd-4fa1-b8e0-f6c112dfb2a1%2Funi-sans.heavy-caps.otf?v=1615381601583);
+}
+/* ================= Root Values ============== */
+:root
+{
+    /* ========== Colors ========== */
+
+    --background-color:hsl(136,0%,12%);
+    --title-color: hsl();
+
+
+
+    /* ========== Custom Fonts ========= */
+
+
+    --title-font: "Press Start 2P", cursive;
+    --a-font :"UniSansBold", serif;
+}
+/* ================= Body & Styling page ============== */
+html 
+{
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+    color: White;
+    font-family: var(--a-font);
+    font-size: 3vh;
+}
+
+body
+{
+    /* background-color: #161616; */
+    background-image: url(../img/Background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background 0.4s;
+}
+
+header .navbar
+{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    /* background-color: red; */
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.navbar .icon
+{
+    display: flex;
+    align-items: center;
+}
+.navbar .containerleft
+{
+    display: flex;
+    color : White;
+    font-size: 15px;
+    font-family: var(--a-font);
+}
+
+.navbar .containerright
+{
+    display: flex;
+    color : White;
+    gap: 15px;
+}
+
+
+.navbar .containerright a
+{
+    /* background-color: blueviolet; */
+    padding: 25px;
+}
+
+.navbar .containerright a:hover
+{
+    background-color: #262626;
+    transition: 0.25s;
+    padding:25px;
+}
+
+.navbar .containertheme
+{
+    display: flex;
+    cursor: pointer;
+    padding: 25px;
+    color: White;
+}
+
+main 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+    width: 80%;
+    margin: auto;
+}
+
+main .project
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .hometext
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.project .hometext h1
+{
+    font-size: 20px;
+    align-items: center;
+    padding-bottom: 15px;
+    text-align: center;
+    color: lime;
+    font-family: var(--title-font);
+}
+
+.project .hometext h2
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color : white;
+}
+
+main .download
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download .hometext h1
+{
+    font-size: 20px;
+    align-items: center;
+    padding-bottom: 15px;
+    text-align: center;
+    color: lime;
+    font-family: var(--title-font);
+}
+
+.download .hometext h2
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 25px;
+    color : white;
+}
+
+.download .downloadbtn
+{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #202020;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.download .downloadbtn:hover
+{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #151515;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 20px;
+}
