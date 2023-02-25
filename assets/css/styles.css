@@ -1,12 +1,7 @@
-/* ================= Google Font ============== */
-
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 @font-face {
-  font-family: UniSansBold;
-  src: url(https://cdn.glitch.com/0cc800e9-bbdd-4fa1-b8e0-f6c112dfb2a1%2Funi-sans.heavy-caps.otf?v=1615381601583);
-}
+    font-family: UniSans;
+    src: url(https://cdn.glitch.com/0cc800e9-bbdd-4fa1-b8e0-f6c112dfb2a1%2Funi-sans.heavy-italic-caps.otf?v=1615381769796);
+  }
 /* ================= Root Values ============== */
 :root
 {
@@ -19,16 +14,13 @@
 
     /* ========== Custom Fonts ========= */
 
-
-    --title-font: "Press Start 2P", cursive;
-    --a-font :"UniSansBold", serif;
+    --a-font :"UniSans";
 }
 
 
 ::-webkit-scrollbar {
     width: 7px;
     background-color: #383943;
-    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 100px;
@@ -58,11 +50,25 @@ a
 body
 {
     /* background-color: #161616; */
-    background-image: url(../img/Background.png);
+    background-image: url(../img/final.jpg);
     background-attachment: fixed;
     background-size: cover;
     transition: background 0.4s;
 }
+
+h1
+{
+    font-family: var(--a-font);
+    color:white;
+}
+p
+{
+    font-family: var(--a-font);
+    color: White;
+}
+.lime {
+    color: lime;
+  }
 
 header .navbar
 {
@@ -105,7 +111,7 @@ header .navbar
 
 .navbar .containerright a:hover
 {
-    background-color: #262626;
+    background-color: #10101040;
     transition: 0.25s;
     padding:25px;
 }
@@ -139,27 +145,87 @@ main .project
 {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .project .hometext h1
 {
-    font-size: 20px;
+    font-size: 40px;
     align-items: center;
-    padding-bottom: 50px;
-    text-align: center;
-    color: lime;
-    font-family: var(--title-font);
+    padding-bottom: 25px;
+    color: White;
+    font-family: var(--a-font);
 }
 
-.project .hometext h2
+.project .hometext p
 {
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     color : white;
     font-family:var(--a-font);
-    font-size: 18px;
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
 }
+main .presentation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentation .presentationText
+{
+    align-items: center;
+    text-align: center;
+}
+
+.presentation .presentationText h1
+{
+    font-size: 40px;
+    text-align: center;
+}
+
+.presentation .presentationText p
+{
+    color: White;
+    font-size: 20px;
+    font-family: var(--a-font);
+}
+
+.presentation .containerCard
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.containerCard .container1
+{
+    border-radius: 10px;
+    background-color: #10101070;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.containerCard .container2
+{
+    border-radius: 10px;
+    background-color: #10101070;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.paragraphe
+{
+    padding-top: 25px;
+    font-size: 20px;
+}
+
 
 main .download
 {
@@ -171,29 +237,31 @@ main .download
 
 .download .hometext h1
 {
-    font-size: 20px;
+    font-size: 40px;
     align-items: center;
     padding-bottom: 50px;
     text-align: center;
-    color: lime;
-    font-family: var(--title-font);
+    color: white;
+    font-family: var(--a-font);
 }
 
-.download .hometext h2
+.download .hometext p
 {
     text-align: center;
     display: flex;
     justify-content: center;
-    padding: 0px 0px 25px;
     color : white;
     font-family: var(--a-font);
-    font-size : 18px;
+    font-size : 20px;
 }
 
 .download .downloadbtn
 {   
     display: flex;
+    width: 25%;
+    margin: auto;
     justify-content: center;
+    background-color: #10101020;
     cursor: pointer;
     border-radius: 10px;
     border: lime solid 1px;
@@ -207,6 +275,7 @@ main .download
     justify-content: center;
     cursor: pointer;
     border-radius: 24px;
+    background-color: #10101070;
     border: aqua solid 1px;
     padding: 14px 10px;
     transition: 0.20s;
