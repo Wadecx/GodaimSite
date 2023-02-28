@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> GODAIM</title>
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+         <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700;lang=en" />
+    
+    
+         <!--=============== FAVICON ===============-->
+        <link
+            rel="shortcut icon"
+            href="../img/aim.png"
+            type="image/x-icon"
+        />
+    </head>
+<body>
+    <header class="header" id="header">
+        <div class="navbar">
+            <div class="icon">
+                <img src="../img/aim.png" />
+            </div>
+            <div class="containerleft">
+                <h1 class="navtitle"> <a href="../../index.html"><span class="lime">GODAIM</span></a></h1>
+            </div>
+
+            <div class="containerright">
+            </div>
+        </div>
+    </header>
+<main>
+        <form class="contactContainer" onsubmit="sendEmail(); reset(); return false;">
+            <h1>Me <span class="lime">Contacter</span></h1>
+            <input type="text" id="email" placeholder="Email" required/>
+            <input type="text" id="object" placeholder="Objet (Bug ou Ajout d'une nouveautée)" required/>
+            <textarea name="Text1" id="message" cols="40" rows="14" required></textarea>
+            <input type="submit"  id="send" title="Envoyer"/>
+        </form> 
+</main>
+
+    <footer class="footer">
+        <div class="leftFooter">
+            <p>Crée Par Wadec</p>
+        </div>
+        <div class="rightFooter">
+            <a href="https://www.instagram.com/tyrxxn.mrl/"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+    <script src="../js/sendmail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
