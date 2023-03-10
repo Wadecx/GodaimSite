@@ -137,8 +137,9 @@ main .download
 .download .downloadbtn
 {   
     display: flex;
-    width: 25%;
+    width: 35%;
     margin: auto;
+    font-size: 20px;
     justify-content: center;
     background-color: #10101020;
     cursor: pointer;
@@ -159,6 +160,7 @@ main .download
     padding: 14px 10px;
     transition: 0.20s;
 }
+
 
 *
 {

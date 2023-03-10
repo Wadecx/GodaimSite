@@ -1,0 +1,58 @@
+footer
+{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+main .contactContainer
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14.4px;
+    background-color: #20202090;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.contactContainer h1
+{
+    text-align: center;
+    margin:0px 15px 10px 15px;
+}
+
+.contactContainer input[type="text"], [type ="submit"]
+{
+    border: 1px solid lime;
+    background: none;
+    border-radius: 10px;
+    color: White;
+    padding: 10px;
+    transition: 0.25s;
+    text-align: center;
+}
+.contactContainer textarea
+{
+    border: 1px solid lime;
+    background: none;
+    border-radius: 10px;
+    color: White;
+    padding: 10px;
+    transition: 0.25s;
+}
+
+.contactContainer input:hover 
+{
+    border: 1px solid aqua;
+    background: none;
+    border-radius: 15px;
+    color: White;
+    padding: 10px 5px;
+}
+.contactContainer textarea:hover    
+{
+    border: 1px solid aqua;
+    border-radius: 15px;
+    color: White;   
+}

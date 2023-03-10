@@ -15,11 +15,11 @@
     --background-color:hsl(136,0%,12%);
     --title-color: hsl();
     
-
-
-
+    
+    
+    
     /* ========== Custom Fonts ========= */
-
+    
     --a-font :"UniSans";
     --footer-font : "Lato";
 }
@@ -42,6 +42,11 @@
 
 
 /* ================= Body & Styling page ============== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 html 
 {
     scroll-behavior: smooth;
