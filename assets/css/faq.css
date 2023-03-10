@@ -1,15 +1,70 @@
-footer
+@font-face {
+    font-family: UniSans;
+    src: url(https://cdn.glitch.com/0cc800e9-bbdd-4fa1-b8e0-f6c112dfb2a1%2Funi-sans.heavy-italic-caps.otf?v=1615381769796);
+  }
+
+  :root
+{
+    /* ========== Colors ========== */
+
+    --background-color:hsl(136,0%,12%);
+    --title-color: hsl();
+    
+    
+    
+    
+    /* ========== Custom Fonts ========= */
+    
+    --a-font :"UniSans";
+}
+
+
+body
+{
+    background-image: url(../img/final.jpg);
+    overflow-x: hidden;
+}
+
+.navbar
 {
     display: flex;
-    position: absolute;
-    bottom: 0;
+    justify-content: center;
+    padding-bottom: 50px;
 }
+
+a
+{
+    text-decoration: none;
+    color: White;
+    font-family: var(--a-font);
+    font-size: 3vh;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: var(--a-font);
+}
+
+h1{
+    color: white;
+    font-family: var(--a-font);
+}
+
+.lime
+{
+    color: lime;
+}
+
 
 main .contactContainer
 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 20%;
+    margin: auto;
     gap: 14.4px;
     background-color: #20202090;
     border-radius: 10px;
@@ -56,3 +111,38 @@ main .contactContainer
     border-radius: 15px;
     color: White;   
 }
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #20202070;
+    border: 0.5px solid #4a4a4a;
+}
+
+.footer p
+{
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    gap: 20px;
+    color: #636363;
+}
+
+.footer a
+{
+    color: #636363;
+}
+.footer .rightFooter
+{
+    gap: 20px;
+    padding-right: 5px;
+}
+
+
